@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   '-g',
+1 verbose cli   'eslint',
+1 verbose cli   '[eslint-plugins]' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose install initial load of C:\Users\Michael\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\Michael\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'eslint', null ]
+7 verbose cache add spec eslint
+8 silly cache add args [ '[eslint-plugins]', null ]
+9 verbose cache add spec [eslint-plugins]
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'eslint',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'eslint',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: 'latest',
+10 silly cache add   type: 'tag' }
+11 silly addNamed eslint@latest
+12 verbose addNamed "latest" is being treated as a dist-tag for eslint
+13 info addNameTag [ 'eslint', 'latest' ]
+14 silly mapToRegistry name eslint
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/eslint
+18 verbose addNameTag registry:https://registry.npmjs.org/eslint not in flight; fetching
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: '[eslint-plugins]',
+19 silly cache add   scope: null,
+19 silly cache add   name: null,
+19 silly cache add   rawSpec: '[eslint-plugins]',
+19 silly cache add   spec: 'C:\\Users\\Michael\\Dropbox\\Documents\\AppAcademy\\curriculum\\w6d1\\[eslint-plugins]',
+19 silly cache add   type: 'local' }
+20 error addLocal Could not install C:\Users\Michael\Dropbox\Documents\AppAcademy\curriculum\w6d1\[eslint-plugins]
+21 verbose request uri https://registry.npmjs.org/eslint
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 11:01:56 PM
+24 verbose request id 62af188d5a75b767
+25 verbose etag "ERQTSTWGXHDPDW6GAK3YP0HF3"
+26 http request GET https://registry.npmjs.org/eslint
+27 http 304 https://registry.npmjs.org/eslint
+28 verbose headers { date: 'Tue, 09 Feb 2016 07:01:57 GMT',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   'cache-control': 'max-age=300',
+28 verbose headers   etag: '"ERQTSTWGXHDPDW6GAK3YP0HF3"',
+28 verbose headers   age: '298',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'x-served-by': 'cache-sjc3127-SJC',
+28 verbose headers   'x-cache': 'HIT',
+28 verbose headers   'x-cache-hits': '3',
+28 verbose headers   'x-timer': 'S1455001317.876067,VS0,VE0',
+28 verbose headers   vary: 'Accept' }
+29 silly get cb [ 304,
+29 silly get   { date: 'Tue, 09 Feb 2016 07:01:57 GMT',
+29 silly get     via: '1.1 varnish',
+29 silly get     'cache-control': 'max-age=300',
+29 silly get     etag: '"ERQTSTWGXHDPDW6GAK3YP0HF3"',
+29 silly get     age: '298',
+29 silly get     connection: 'keep-alive',
+29 silly get     'x-served-by': 'cache-sjc3127-SJC',
+29 silly get     'x-cache': 'HIT',
+29 silly get     'x-cache-hits': '3',
+29 silly get     'x-timer': 'S1455001317.876067,VS0,VE0',
+29 silly get     vary: 'Accept' } ]
+30 verbose etag https://registry.npmjs.org/eslint from cache
+31 verbose get saving eslint to C:\Users\Michael\AppData\Roaming\npm-cache\registry.npmjs.org\eslint\.cache.json
+32 silly addNameTag next cb for eslint with tag latest
+33 silly addNamed eslint@1.10.3
+34 verbose addNamed "1.10.3" is a plain semver version for eslint
+35 silly cache afterAdd eslint@1.10.3
+36 verbose afterAdd C:\Users\Michael\AppData\Roaming\npm-cache\eslint\1.10.3\package\package.json not in flight; writing
+37 verbose afterAdd C:\Users\Michael\AppData\Roaming\npm-cache\eslint\1.10.3\package\package.json written
+38 verbose stack Error: ENOENT: no such file or directory, open 'C:\Users\Michael\Dropbox\Documents\AppAcademy\curriculum\w6d1\[eslint-plugins]'
+38 verbose stack     at Error (native)
+39 verbose cwd C:\Users\Michael\Dropbox\Documents\AppAcademy\curriculum\w6d1
+40 error Windows_NT 10.0.10586
+41 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "-g" "eslint" "[eslint-plugins]"
+42 error node v4.2.6
+43 error npm  v2.14.12
+44 error path C:\Users\Michael\Dropbox\Documents\AppAcademy\curriculum\w6d1\[eslint-plugins]
+45 error code ENOENT
+46 error errno -4058
+47 error syscall open
+48 error enoent ENOENT: no such file or directory, open 'C:\Users\Michael\Dropbox\Documents\AppAcademy\curriculum\w6d1\[eslint-plugins]'
+48 error enoent This is most likely not a problem with npm itself
+48 error enoent and is related to npm not being able to find a file.
+49 verbose exit [ -4058, true ]

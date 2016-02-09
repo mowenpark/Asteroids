@@ -13,6 +13,7 @@
     <script src='./utils.js'></script>
     <script src='./asteroid.js'></script>
     <script src='./game.js'></script>
+    <script src='./gameView.js'></script>
     <script>
       var canvasEl = document.getElementsByTagName("canvas")[0];
       var ctx = canvasEl.getContext("2d");
@@ -20,7 +21,7 @@
       canvasEl.height = window.innerHeight;
       canvasEl.width = window.innerWidth;
       var asteroid = new Asteroids.Game(canvasEl.width, canvasEl.height);
-      var newasteroid = new Asteroids.Asteroid([20,20]);
+      var newasteroid = new Asteroids.GameView(ctx, asteroid);
     </script>
   </body>
 </html>
